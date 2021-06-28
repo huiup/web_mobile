@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- 要求当前网页使用IE浏览器最高版本的内核来渲染 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！
+    解决IE9以下浏览器对html5新增标签的不识别，并导致CSS不起作用的问题
+    解决IE9以下浏览器对CSS3 Media Query的不识别 -->
+	<!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<title>Document</title>
+	<style>
+		[class^=col] {
+			border: 1px solid #666;
+			margin-top: 20px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<h4>Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列</h4>
+	<div class="container">
+		<div class="row">
+			<!-- 通过为 .row 元素设置负值 margin(左右-15px) 从而抵消掉为 .container 元素设置的 padding(左右15px) -->
+			<div class="col-lg-3">1170px</div>
+			<div class="col-lg-3">1170px</div>
+			<div class="col-lg-3">1170px</div>
+			<div class="col-lg-3">1170px</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">970px</div>
+			<div class="col-md-3">970px</div>
+			<div class="col-md-3">970px</div>
+			<div class="col-md-3">970px</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">750px</div>
+			<div class="col-sm-3">750px</div>
+			<div class="col-sm-3">750px</div>
+			<div class="col-sm-3">750px</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3">超小屏</div>
+			<div class="col-xs-3">超小屏</div>
+			<div class="col-xs-3">超小屏</div>
+			<div class="col-xs-3">超小屏</div>
+		</div>
+
+
+		<p>如果分摊的份数小于12,则占不满整个container的宽度，会有空白，默认靠左</p>
+		<div class="row">
+			<div class="col-md-3">3</div>
+			<div class="col-md-3">3</div>
+			<div class="col-md-3">3</div>
+			<div class="col-md-1">1</div>
+		</div>
+
+		<p>如果分摊的份数大于12,则大于的那一列会另起一行显示</p>
+		<div class="row">
+			<div class="col-md-3">3</div>
+			<div class="col-md-3">3</div>
+			<div class="col-md-3">3</div>
+			<div class="col-md-4">4</div>
+		</div>
+	</div>
+</body>
+
+</html>

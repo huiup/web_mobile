@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .row>div {
+            height: 50px;
+            border: 1px solid #666;
+            background-color: skyblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h4>列嵌套时，最好添加一个.row，这样可以抵消掉父元素的padding，其高度自动和父级一样高</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- 子盒子也看成12等份 -->
+                <div class="row">
+                    <div class="col-md-6">1</div>
+                    <div class="col-md-6">2</div>
+                </div>
+            </div>
+            <div class="col-md-4">2</div>
+            <div class="col-md-4">3</div>
+        </div>
+        <h3>其宽度为33.333%，且为左浮动，添加外边距会掉下来</h3>
+    </div>
+
+
+</body>
+
+</html>

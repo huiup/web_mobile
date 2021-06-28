@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        [class^=col] {
+            border: 1px solid #666;
+            background-color: skyblue;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h4>hidden-xs，hidden-sm，hidden-md，hidden-lg设置隐藏</h4>
+        <div class="row">
+            <div class="col-xs-3">1</div>
+            <div class="col-xs-3 hidden-md">Middle屏幕时会被隐藏</div>
+            <div class="col-xs-3">3</div>
+            <div class="col-xs-3 hidden-lg">large屏幕时会被隐藏</div>
+        </div>
+
+        <h4>反之visible-xs，visible-sm，visible-md，visible-lg是显示某个内容</h4>
+        <div class="row">
+            <div class="col-xs-3">右侧区域md屏幕会显示----》</div>
+            <div class="col-xs-3">
+                <div class="visible-md">md屏幕时显示此文字</div>
+            </div>
+            <div class="col-xs-3">《----左侧区域md屏幕时会显示</div>
+            <div class="col-xs-3">4</div>
+        </div>
+    </div>
+</body>
+
+</html>
